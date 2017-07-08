@@ -11,6 +11,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Cloud" target="1.5" />
+      <module name="ds" target="1.5" />
       <module name="hh" target="1.5" />
       <module name="MyCloud" target="1.5" />
     </bytecodeTargetLevel>
