@@ -27,10 +27,10 @@
 </head>
 
 <body>
-<h1>SSM整合</h1>
+<h1>注册</h1>
 <form action="${pageContext.request.contextPath }/userAction.do" method="post">
     用户名：<input name="name"/> <br/>
-    用户年龄<input name="age"/><br/>
+    用户密码<input name="age"/><br/>
     <input type="submit" value="save"/>
 </form>
 </body>

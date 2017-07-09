@@ -224,7 +224,7 @@
     </dependencies>
 
     <build>
-        <finalName>myCloud</finalName>
+        <finalName>Cloud</finalName>
     </build>
 
 </project>
