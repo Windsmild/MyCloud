@@ -49,5 +49,5 @@
     </bean>
 
     <!--全局异常处理器只要类实现了HandlerExceptionResolver接口，就是一个全局异常处理器哦-->
-    <bean class="java.lang.Exception"/>
+    <bean class="com.piaoniu.common.service.CloudExceptionResolver"/>
 </beans>

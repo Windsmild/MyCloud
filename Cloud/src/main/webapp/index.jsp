@@ -12,7 +12,7 @@
   </head>
   <body>
   Hello MyCloud!
-  <br>"request.getContextPath()的值是   "<%=request.getContextPath()%><br/>
+  <!--<br>"request.getContextPath()的值是" <%=request.getContextPath()%><br/> -->
   <form action="${pageContext.request.contextPath}/user/login" method="post" id="myform" name="myform">
     <input type="text" id="userName" name="userName"/>
     <input type="password" id="password" name="password"/>

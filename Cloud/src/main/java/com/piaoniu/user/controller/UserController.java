@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * Created by Stephen Cai on 2017-07-09 14:59.
  */
@@ -28,7 +30,7 @@ public class UserController {
 //	}
 
 	@RequestMapping(value="/login",method= RequestMethod.POST)
-	public String login(User user) throws Exception {
+	public String login(User user, HttpServletRequest request) throws Exception {
 		userService.login(user);
 		return "loginSuccess";
 	}
