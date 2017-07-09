@@ -47,4 +47,7 @@
         <!-- 内存中的最大值 -->
         <property name="maxInMemorySize" value="4096"/>
     </bean>
+
+    <!--全局异常处理器只要类实现了HandlerExceptionResolver接口，就是一个全局异常处理器哦-->
+    <bean class="java.lang.Exception"/>
 </beans>

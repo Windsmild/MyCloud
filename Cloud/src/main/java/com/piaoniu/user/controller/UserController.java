@@ -29,6 +29,14 @@ public class UserController {
 
 	@RequestMapping(value="/login",method= RequestMethod.POST)
 	public String login(User user) throws Exception {
-		return userService.login(user);
+		userService.login(user);
+		return "loginSuccess";
 	}
+
+	@RequestMapping(value="/register", method = RequestMethod.POST)
+	public String register(User user) throws Exception {
+		userService.register(user);
+		return "registerSuccess";
+	}
+
 }
