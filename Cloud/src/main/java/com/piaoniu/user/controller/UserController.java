@@ -5,6 +5,7 @@ import com.piaoniu.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
@@ -39,6 +40,11 @@ public class UserController {
 	public String register(User user) throws Exception {
 		userService.register(user);
 		return "registerSuccess";
+	}
+
+	@RequestMapping(value="/print", method = RequestMethod.GET)
+	public String print(@RequestParam String str) throws Exception {
+		return str;
 	}
 
 }
