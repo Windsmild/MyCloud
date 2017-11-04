@@ -1,14 +1,8 @@
 package com.piaoniu.springTest.service;
 
-import java.util.List;
-
 /**
  * Created by Stephen Cai on 2017-11-03 20:43.
  */
-public interface ShopService {
+public interface OtherShopService {
     String staticColors();
-
-    List<String> immutable();
-
-    String immutableString();
 }

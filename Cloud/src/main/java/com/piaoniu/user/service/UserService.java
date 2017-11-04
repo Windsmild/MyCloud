@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserService {
 	@Autowired
-	UserDao userDao;
+	private UserDao userDao;
 
 	public String register(User user) throws Exception {
 		User existedUser = userDao.findByUserName(user.getUserName());
